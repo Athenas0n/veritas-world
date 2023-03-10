@@ -63,57 +63,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Background image for notes page */
-#notesCover{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url(../src/images/notesCoverWide.JPG);
-    padding-top: -10%;
-    background-size: var(--background-card-size);
-    background-position:center;
-    background-repeat: no-repeat;
-}
 
-/* Background image for projects page */
-#projectsCover{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url(../src/images/projectsCoverWide.JPG);
-    padding-top: -10%;
-    background-size: var(--background-card-size);
-    background-position:center;
-    background-repeat: no-repeat;
-}
-
-/* Background image for bug reports page */
-#bugsCover{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url(../src/images/bugsCoverWide.JPG);
-    padding-top: -10%;
-    background-size: var(--background-card-size);
-    background-position:center;
-    background-repeat: no-repeat;
-}
-
-/* Background image for contact page */
-#contactCover{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url(../src/images/contactCoverWide.JPG);
-    padding-top: -10%;
-    background-size: var(--background-card-size);
-    background-position:center;
-    background-repeat: no-repeat;
-}
 
 
 /* --------------------
@@ -126,8 +76,14 @@ body {
     /* Ensures that it stays away from the edge of the page */
     width: 50vw;
 }
+.articleParagraphs{
+    font-size: 30px;
+}
 .spacer{
     height: 60px;
+}
+h2{
+    font-size: 40px;
 }
 
 /* ------------------
