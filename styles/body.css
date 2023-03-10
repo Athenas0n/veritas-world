@@ -1,0 +1,191 @@
+/* Styling for the main body of every page */
+
+
+/* -------------------------------------
+-----Basic styling for each page-----
+------------------------------------- */
+
+/* Variables */
+:root {
+    --main-font: 'tilt';
+}
+@font-face {
+    font-family: tilt;
+    src: url(../src/font/tilt.ttf);
+}
+
+
+/* Make the scrolling less jankey */
+*{
+    scroll-behavior: smooth;
+}
+
+/* Set background colour to black */
+body {
+    background-color: black;
+}
+
+/* Setting the dimensions, font and font colour used in the main body */
+#mainBody {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:black;
+    background-color: white;
+    font-family: var(--main-font);
+    border-radius: 25px;
+}
+
+
+/* ---------------------------
+-----Background Images-----
+--------------------------- */
+
+
+/* Background image for homepage */
+#homeCover{
+    /* Set height to the height of the viewport */
+    height: 100vh;
+    /* Flex makes it easier to position elements without disturbing other elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    /* Set the background image */
+    background: url(../src/images/background.JPG);
+    /* Stops it overlapping with header on page load */
+    /* padding-top: 100px; */
+    /* Good size on all screen sizes */
+    background-size: 100%;
+    /* we want the gif to be centered */
+    background-position:center;
+    /* Stops the gif from being tiled across the page */
+    background-repeat: no-repeat;
+}
+
+/* Background image for notes page */
+#notesCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/notesCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* Background image for projects page */
+#projectsCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/projectsCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* Background image for bug reports page */
+#bugsCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/bugsCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* Background image for contact page */
+#contactCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/contactCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+/* --------------------
+-----Paragraphs-----
+-------------------- */
+
+/* Set the font size for paragraphs */
+.paragraphs{
+    font-size: 30px;
+    /* Ensures that it stays away from the edge of the page */
+    width: 50vw;
+}
+
+
+/* ------------------
+-----Headings-----
+------------------ */
+
+/* Container for subheading so that they can be positioned better */
+#headings {
+    display: flex;
+    justify-content: center;
+}
+
+.subHeading{
+    font-size: 50px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+
+/* -----------------------
+-----Body Sections-----
+----------------------- */
+
+/* The main sections of each page after the cover image */
+.mainBodySections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    /* Adds space between each section */
+    padding-bottom: 20vh;   
+}
+
+
+/* ----------------------------------
+-----Images used on the pages-----
+---------------------------------- */
+
+.logo{
+    width: 250px;
+    height: auto;
+    /* make image round */
+    border-radius: 50%;
+    
+}
+
+
+/* ------------------------------
+-----Notes page specifics-----
+------------------------------ */
+
+/* The images used for each topic */
+.notes {
+    width: 250px;
+    height: auto;
+}
+
+/* The captions under the images ("figures")*/
+.noteCaptions {
+    font-size: 30px;
+    text-align: center;
+}
+
