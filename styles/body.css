@@ -126,7 +126,9 @@ body {
     /* Ensures that it stays away from the edge of the page */
     width: 50vw;
 }
-
+.spacer{
+    height: 60px;
+}
 
 /* ------------------
 -----Headings-----
@@ -170,22 +172,5 @@ body {
     /* make image round */
     border-radius: 50%;
     
-}
-
-
-/* ------------------------------
------Notes page specifics-----
------------------------------- */
-
-/* The images used for each topic */
-.notes {
-    width: 250px;
-    height: auto;
-}
-
-/* The captions under the images ("figures")*/
-.noteCaptions {
-    font-size: 30px;
-    text-align: center;
 }
 
