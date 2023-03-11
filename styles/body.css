@@ -77,13 +77,28 @@ body {
     width: 50vw;
 }
 .articleParagraphs{
+    display: flex;
+    justify-content: center;
+    color: black;
     font-size: 30px;
+    text-decoration: none;
+    width: 98%;
+    margin-left: 1%;
+}
+.articleImage{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 15px;
 }
 .spacer{
     height: 60px;
 }
 h2{
     font-size: 40px;
+    /* width:98%;
+    margin-left: 1%; */
+    display: flex;
+    justify-content: center;
 }
 
 /* ------------------

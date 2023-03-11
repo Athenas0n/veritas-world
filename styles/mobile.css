@@ -26,10 +26,6 @@
         cursor:pointer;
     }
 
-    /* Hides the accessibility button from the top header (it is already implemented in side header) */
-    #changeFont {
-        display:none;
-    }
 
     /* Makes the "Athenason" text green to match the burger */
     #home {
@@ -55,14 +51,28 @@
         padding-bottom: 20vh;   
     }
 
+    .subHeading{
+        margin-right: 0;
+    }
+
 
     /* --------------------
     -----Paragraphs-----
     -------------------- */
     .paragraphs{
+        display: flex;
+        justify-content: center;
+        color: black;
         font-size: 30px;
-        width: 80vw;
-        padding-right: 5vh;
+        text-decoration: none;
+        width: 98%;
+        margin-left: 0%;
+        margin-right: 6%;
+    }
+    .articleImage{
+        width:100%;
+        margin-left: 0;
+        border-radius: 0;
     }
 
 
@@ -73,26 +83,6 @@
         margin-right: 5vh;
         width:200px;
     }
-
-
-    /* --------------------------
-    -----Reorder Elements-----
-    -------------------------- */
-
-    /* Set the image in the education section of the home page to be before the paragraph */
-    #eduLogo {
-        order: 1;
-    }
-    #eduPara {
-        order: 2;
-    }
-
-    /* Set the image in the goNetScan section of the notes page to be before the paragraph */
-    #netScanLogo {
-        order: 1;
-    }
-    #netScanPara {
-        order: 2;
-    }   
+ 
     
 }
